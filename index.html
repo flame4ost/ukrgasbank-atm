@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf/8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="fontawesome-free-5.11.2-web (1)\fontawesome-free-5.11.2-web\css\all.css"
+    type="text/css" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>УкрГазБанк</title>
+   <link rel="shortcut icon" href="assets/bank.ico" >
+</head>
+
+
+<div class="main-container">
+  <div>
+    <div class="name">
+      <h1 class="name-b" id=><span class="color_change">Ласкаво просимо до Банкомату "УкрГазБанк"</span></h1>
+    </div>
+    <div class="main">
+
+      <div class="pas" id="pas" style="display:block">
+        <div>
+          <h1 class="heading head1" id="pinHeading" style="color:black">Будь ласка, введіть свій PIN-код</h1>
+        </div>
+        <!-- style="display:;" -->
+        <div id="pinDiv">
+          <input type="password" id="pin1" placeholder="" class="pin" maxlength="4" required />
+          <button class="btnOK" id="btnEnter">Авторизація</button>
+        </div>
+        <div class="trans">
+          <h3 id="pinMsg" class="heading head1" style="color:black"></h3>
+        </div>
+      </div>
+      <div class="buttons" style="display:none" id="btnsSecreen">
+        <div>
+          <h1 class="heading" style="color:black">Виберіть потрібні транзакції</h1>
+        </div>
+        <div class="buttons-left">
+          <button class="btn" id="withdarawal">
+            <h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white"
+                class="fas fa-caret-right"></i>Зняття готівки
+            </h1>
+          </button>
+          <button class="btn" id="billPay">
+            <h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white; text-align: center;"
+                class="fas fa-caret-right"></i>Оплата рахунків
+            </h1>
+          </button>
+          <button class="btn" id="ballanceInquiry">
+            <h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white"
+                class="fas fa-caret-right"></i>Запит балансу
+            </h1>
+          </button>
+
+        </div>
+        <div class="buttons-right">
+          <button class="btn" id="transfer">
+            <h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white"
+                class="fas fa-caret-right"></i>Переказ грошей</h1>
+          </button>
+          <button class="btn" id="deposit">
+            <h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white"
+                class="fas fa-caret-right"></i>Зона зберігання</h1>
+          </button>
+          <button class="btn" id="Exit">
+            <h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white; text-align: center;"
+                class="fas fa-caret-right"></i>Залишок на рахунку</h1>
+          </button>
+        </div>
+      </div>
+      <div class="transcations" id="transactions" style="display:none">
+
+        <div class="trans">
+          <h1 id="firstText" class="heading head1" style="color:black"></h1>
+        </div>
+
+        <div id="amounts">
+          <input id="amountIn" type="number" placeholder="" class="pin" required />
+          <button class="btnOK" id="btnOK"><span id="num">Підтвердити</span></button>
+        </div>
+        <div class="trans">
+          <h3 id="secondText" class="heading head1" style="color:black"></h3>
+        </div>
+        <div class="trans">
+          <h3 class="heading head1" id="amount"></span></h3>
+        </div>
+        <div class="trans"><a id="lin1" href="#">
+            <h3 class="heading head1" id="back">Повернутися до головного меню</h3>
+          </a></div>
+      </div>
+      <div class="transcations" id="billPayDiv" style="display:none">
+
+        <div class="trans">
+          <h1 id="firstText2" class="heading head1" style="color:black"></h1>
+        </div>
+        <div id="ref" style="display:block;">
+          <input id="reffIn" type="number" placeholder="" class="pin" />
+          <button class="btnOK" id="btnReff"><span id="num">Введіть</span></button>
+        </div>
+        <div id="billIn" style="display:none">
+          <input id="amountIn2" type="number" placeholder="" class="pin" />
+          <button class="btnOK" id="btnOK2"><span id="num">Підтвердити</span></button>
+        </div>
+        <div class="trans">
+          <h3 id="secondText2" class="heading head1"></h3>
+        </div>
+        <div class="trans">
+          <h3 class="heading head1" id="amount2"></span></h3>
+        </div>
+        <div class="trans"><a id="lin2" href="#">
+            <h3 class="heading head1" id="back">Повернутися до головного меню</h3>
+          </a></div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
